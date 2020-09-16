@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Divs gerais! */
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+/****************/
+
+header {
+    padding: 10px 2% 25px 2%;
+    background-color: rgb(220, 220, 220);
+}
+
+header .logo-1 {
+    float: left;
+    width: 160px;
+    height: 60px;
+    /* background-color: purple; */
+    background-image: url('../images/logo1.png');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header .logo-2 {
+    float: right;
+    width: 170px;
+    height: 60px;
+    /* background-color: green; */
+    background-image: url('../images/logo2.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.cover-form {
+    width: 100%;
+}
+
+.bg {
+    position: relative;
+    height: 560px;
+    background-image: url('../images/bg-form.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.form-container {
+    position: absolute;
+    right: 30px;
+    top: -2.5%;
+    background-color: #fff;
+    width: 400px;
+    height: 105%;
+    box-shadow: 1px 1px 2px 1px rgba(160, 160, 160, 0.9);
+}
+
+.form-container h2 {
+    background-color: rgb(210, 210, 210);
+    padding: 25px 15px;
+    color: #000;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.form-container .form-wraper:not(:first-child) {
+    margin-top: 40px;
+}
+
+.form-container .form-wraper:last-child {
+    margin-top: 25px;
+}
+
+.form-container form {
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.form-container form p {
+    font-size: 14px;
+    color: #525252;
+}
+
+.form-container form input[type=text] {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+}
+
+.form-container form input[type=submit] {
+    background-color: #033C50;
+    text-transform: uppercase;
+    color: #fff;
+    width: 100%;
+    font-size: 25px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+}
+
+section.chamada {
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+.icone-seta {
+    position: absolute;
+    left: 50%;
+    top: -32px;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    background-image: url('../images/arrow.png');
+    background-size: 100% 100%;
+}
+
+section.chamada .container {
+    background-color: #29526D;
+    padding: 70px 0 50px 0;
+}
+
+section.chamada h2 {
+    width: 98%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+section.chamada p {
+    width: 98%;
+    max-width: 700px;
+    margin-top: 10px;
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.flex-mosaico {
+    display: flex;
+}
+
+.item-1-mosaico {
+    width: 60%;
+    background-position: center;
+    background-size: cover;
+}
+
+.item-2-mosaico {
+    width: 40%;
+    padding: 60px 40px;
+    background-color: #4683AB;
+}
+
+.item-2-mosaico {
+    color: #fff;
+}
+
+@media (max-width: 960px) {
+    .bg {
+        height: auto;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .form-container {
+        position: static;
+        display: inline-block;
+        width: 96%;
+        max-width: 400px;
+        height: auto;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer img {
+    width: 120px;
+}
+
+footer p {
+    margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+    .flex-mosaico {
+        display: block;
+    }
+
+    .item-1-mosaico {
+        width: 100%;
+        padding-top: 70%;
+    }
+
+    .item-2-mosaico {
+        width: 100%;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 510px) {
+    header {
+        text-align: center;
+    }
+
+    header .logo-1, header .logo-2 {
+        margin-top: 10px;
+        float: none;
+        display: inline-block;
+    }
+}
