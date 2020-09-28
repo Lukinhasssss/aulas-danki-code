@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/*** AULA 02 - Manipulando CSS via JQuery ***/
+.artigo1 {
+    width: 100%;
+    padding: 30px;
+    background: rgb(210, 210, 210);
+}
+
+/*** AULA 03 - Introduzindo os Eventos ***/
+.artigo2 {
+    width: 100%;
+    padding: 30px;
+    background: rgb(19, 75, 96);
+}
+
+/*** AULA 04 - Mais sobre Eventos ***/
+/* .box {
+    height: 3000px;
+} */
+
+/* .box {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #951753;
+} */
+
+/*** AULA 05 - Variáveis com JQuery ***/
+/* .box {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #258456;
+} */
+
+/*** AULA 06 - Manipulando Dimensões Dinâmicamente ***/
+/* .box {
+    width: 500px;
+    padding: 20px;
+    background-color: #258456;
+} */
+
+/*** AULA 07 - Manipulando Textos Dinâmicamente ***/
+/* .box {
+    width: 100%;
+    padding: 30px;
+    background-color: #888;
+}
+
+h1.texto1 {
+    color: darkred;
+} */
+
+/*** AULA 08 - Manipulando a Posição na DOM ***/
+/* .box {
+    padding: 20px;
+    background-color: #258456;
+} */
+
+/*** AULA 09 - Eventos Dinâmicos e Mais Conceitos ***/
+
+/*** AULA 10 - Formulário Com JQuery ***/
+
+/*** AULA 11 - Eventos e Animações ***/
+/* .box1 {
+    width: 100%;
+    padding: 40px 4%;
+    text-align: center;
+    color: #222;
+    background-color: #197596;
+}
+
+.box2 {
+    display: none;
+    width: 100%;
+    padding: 40px 4%;
+    text-align: center;
+    color: #197596;
+    background-color: #222;
+} */
+
+/*** AULA 12 - Animate, Interval e Timeout ***/
+/* .box1 {
+    width: 100%;
+    padding: 40px 4%;
+    text-align: center;
+    color: #222;
+    background-color: #197596;
+}
+
+.box2 {
+    width: 100%;
+    padding: 40px 4%;
+    text-align: center;
+    color: #197596;
+    background-color: #222;
+} */
+
+/*** AULA 13 - Manipulando Classes ***/
+/* .box1 {
+    width: 100%;
+    padding: 40px 4%;
+    text-align: center;
+    color: #222;
+    background-color: #197596;
+    transition: 1.5s;
+}
+
+.box2 {
+    width: 100%;
+    padding: 40px 4%;
+    text-align: center;
+    color: #197596;
+    background-color: #222;
+}
+
+.minhaclasse {
+    color: darkred;
+} */
+
+/*** AULA 16 - Criando Janela Modal e Formulário ***/
+/* .btn {
+    width: 80%;
+    max-width: 300px;
+    height: 100px;
+    color: #eee;
+    font-size: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: helvetica;
+    line-height: 100px;
+    text-align: center;
+    background-color: #197596;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 94%;
+    max-width: 400px;
+    padding: 80px 2%;
+    border: 4px solid rgb(210, 210, 210);
+    background-color: #eee;
+}
+
+.form input[type=text] {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 20px;
+    padding-left: 8px;
+    line-height: 48px;
+    border: 1px solid #CCC;
+}
+
+.form input[type=submit] {
+    width: 100%;
+    height: 48px;
+    color: #eee;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: helvetica;
+    line-height: 48px;
+    text-align: center;
+    background-color: #197596;
+    border: 0;
+    border-radius: 8px;
+}
+
+.closeBtn {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+    color: #eee;
+    background-color: #197596;
+    position: absolute;
+    right: -16px;
+    top: -16px;
+} */
+
+/*** AULA 17 - Expressões Regulares ***/
+/* .btn {
+    width: 80%;
+    max-width: 300px;
+    height: 100px;
+    color: #eee;
+    font-size: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: helvetica;
+    line-height: 100px;
+    text-align: center;
+    background-color: #197596;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 94%;
+    max-width: 400px;
+    padding: 80px 2%;
+    border: 4px solid rgb(210, 210, 210);
+    background-color: #eee;
+}
+
+.form input[type=text] {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 20px;
+    padding-left: 8px;
+    line-height: 48px;
+    border: 1px solid #CCC;
+    color: #CCC;
+}
+
+.form input[type=submit] {
+    width: 100%;
+    height: 48px;
+    color: #eee;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: helvetica;
+    line-height: 48px;
+    text-align: center;
+    background-color: #197596;
+    border: 0;
+    border-radius: 8px;
+}
+
+.closeBtn {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+    color: #eee;
+    background-color: #197596;
+    position: absolute;
+    right: -16px;
+    top: -16px;
+} */
+
+/*** AULA 19 - Navegação Sem Atualizar ***/
