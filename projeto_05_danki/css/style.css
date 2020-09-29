@@ -440,7 +440,8 @@ section.venda .search1 .barra-preco .barra-preco-fill {
     position: absolute;
     left: 0;
     top: 0;
-    width: 30%;
+    /* width: 30%; */
+    width: 0;
     height: 20px;
     border-radius: 20px;
     background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
@@ -448,7 +449,8 @@ section.venda .search1 .barra-preco .barra-preco-fill {
 
 section.venda .search1 .barra-preco .pointer-barra {
     position: absolute;
-    left: calc(30% - 13px);
+    /* left: calc(30% - 13px); */
+    left: 0;
     top: -3px;
     width: 26px;
     height: 26px;
@@ -627,14 +629,14 @@ section.venda-single .container {
     overflow: hidden;
 }
 
-.nav-galeria-wraper {
-    width: 200%;
-}
+/* .nav-galeria-wraper {
+    width: 200%; Vai ser adicionado via JS
+} */
 
 .mini-img-wraper {
     float: left;
     padding: 4px;
-    width: calc(33.3% * (100 / 200));
+    /* width: calc(33.3% * (100 / 200)); */ /* Vai ser adicionado via JS */
 }
 
 .mini-img {

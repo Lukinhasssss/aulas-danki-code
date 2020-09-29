@@ -5,6 +5,43 @@
     font-family: Montserrat, sans-serif;
 }
 
+/*** Estilos para o plugin Slick ***/
+.slick-dotted ul {
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.slick-dotted li {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.slick-dotted button:focus {
+    outline: 0;
+}
+
+.slick-dotted li button {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #D8D8D8;
+    border-width: 0;
+    background: #D8D8D8;
+    opacity: 1;
+    cursor: pointer;
+}
+
+li.slick-active button {
+    background: #688293;
+    color: #688293;
+}
+
+.slick-slide:focus {
+    outline: 0;
+}
+
 .container {
     /* max-width: 1280px; */
     max-width: 1400px;
@@ -272,6 +309,7 @@ section.depoimentos .depoimento-single .nome-depoimento img {
     width: 32px;
     height: 32px;
     border-radius: 16px;
+    display: inline-block; /* Para alinhar a imagem no plugin Slick */
 }
 
 section.depoimentos .depoimento-single .nome-depoimento span {

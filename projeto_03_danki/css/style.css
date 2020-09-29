@@ -247,10 +247,20 @@ section.sessao3 .part2 {
     padding: 140px 0 90px 0;
 }
 
-section.sessao3 .part2 .sobre-autor {
-    float: left;
+section.sessao3 .part2 .scrollEquipe {
     max-width: 500px;
     padding-left: 30px;
+    overflow: hidden;
+}
+
+section.sessao3 .part2 .scroll-wraper {
+    width: 100%;
+}
+
+section.sessao3 .part2 .sobre-autor {
+    float: left;
+    width: 100%;
+    padding: 0 20px;
 }
 
 section.sessao3 .part2 .titulo-autor {
@@ -299,7 +309,7 @@ section.sessao3 .part2 .slider-bullets {
     width: 100%;
     float: left;
     margin-top: 25px;
-    padding-left: 30px;
+    padding-left: 50px;
 }
 
 section.sessao3 .part2 .slider-bullets span {

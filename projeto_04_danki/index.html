@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slick.css">
 </head>
 
 <body>
@@ -21,19 +22,19 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="">QUEM SOU</a></li>
-                    <li><a href="">DEPOIMENTOS</a></li>
-                    <li><a href="">SOBRE</a></li>
-                    <li><a href="">CONTATO</a></li>
+                    <li><a href="#sobre">QUEM SOU</a></li>
+                    <li><a href="#tratamentos">TRATAMENTOS</a></li>
+                    <li><a href="#depoimentos">DEPOIMENTOS</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
                 </ul>
             </nav>
 
             <nav class="menu-mobile">
                 <ul>
-                    <li><a href="">QUEM SOU</a></li>
-                    <li><a href="">DEPOIMENTOS</a></li>
-                    <li><a href="">SOBRE</a></li>
-                    <li><a href="">CONTATO</a></li>
+                    <li><a href="#sobre">QUEM SOU</a></li>
+                    <li><a href="#tratamentos">TRATAMENTOS</a></li>
+                    <li><a href="#depoimentos">DEPOIMENTOS</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
                 </ul>
             </nav>
             <div class="clear"></div>
@@ -117,7 +118,7 @@
         </div>
     </section>
 
-    <section class="perfil-container">
+    <section class="perfil-container" id="sobre">
         <div class="container">
             <div class="perfil-wraper">
                 <div class="perfil-wraper2">
@@ -133,24 +134,7 @@
         </div>
     </section>
 
-    <section class="videos">
-        <div class="container">
-            <div class="box-video">
-                <iframe src="https://www.youtube.com/embed/_egmFbb2qZ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <div class="box-video">
-                <iframe src="https://www.youtube.com/embed/X2sLCWK2DQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <div class="box-video">
-                <iframe src="https://www.youtube.com/embed/Jf2ncoyDXn8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="clear"></div>
-        </div>
-    </section>
-
-    <section class="tratamentos">
+    <section class="tratamentos" id="tratamentos">
         <h2>Tratamentos</h2>
         <div class="container">
             <div class="tratamento-container">
@@ -199,13 +183,48 @@
                 </div>
                 <div class="clear"></div>
             </div>
+            <!-- <div class="clear"></div> Foi removida para não atrapalhar o plugin Slick -->
+        </div>
+    </section>
+
+    <section class="videos" id="videos">
+        <div class="container">
+            <div class="box-video">
+                <iframe src="https://www.youtube.com/embed/_egmFbb2qZ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="box-video">
+                <iframe src="https://www.youtube.com/embed/X2sLCWK2DQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="box-video">
+                <iframe src="https://www.youtube.com/embed/Jf2ncoyDXn8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <div class="clear"></div>
         </div>
     </section>
 
-    <section class="depoimentos">
+    <section class="depoimentos" id="depoimentos">
         <h2>Depoimentos</h2>
         <div class="container">
+            <div class="depoimento-single">
+                <quote> <!-- Tag para depoimentos -->
+                    "Estrutura e atendimento excepcionais. Adorei o atendimento da Dra. Fulana de Tal, excelente profissional"
+                </quote>
+                <div class="nome-depoimento">
+                    <img src="https://avatars1.githubusercontent.com/u/60019382?s=460&u=b336f565f0efc9a7a666c929458b0715b84f4c19&v=4" alt="Perfil do Depoimento">
+                    <span>Lucas Monteiro De Oliveira</span>
+                </div>
+            </div>
+            <div class="depoimento-single">
+                <quote> <!-- Tag para depoimentos -->
+                    "Estrutura e atendimento excepcionais. Adorei o atendimento da Dra. Fulana de Tal, excelente profissional"
+                </quote>
+                <div class="nome-depoimento">
+                    <img src="https://avatars1.githubusercontent.com/u/60019382?s=460&u=b336f565f0efc9a7a666c929458b0715b84f4c19&v=4" alt="Perfil do Depoimento">
+                    <span>Lucas Monteiro De Oliveira</span>
+                </div>
+            </div>
             <div class="depoimento-single">
                 <quote> <!-- Tag para depoimentos -->
                     "Estrutura e atendimento excepcionais. Adorei o atendimento da Dra. Fulana de Tal, excelente profissional"
@@ -244,7 +263,7 @@
         <div class="clear"></div>
     </section>
 
-    <section class="contato">
+    <section class="contato" id="contato">
         <h2>Contato</h2>
         <form action="http://127.0.0.1:5500/projeto_04_danki/index.html" method="get">
             <div class="form-wraper w100">
@@ -295,6 +314,9 @@
 
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/menu_mobile.js"></script>
+    <script src="./js/menuScroll.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/slides.js"></script>
 </body>
 
 </html>
