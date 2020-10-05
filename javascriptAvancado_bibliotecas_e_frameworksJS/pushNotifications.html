@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push Notifications</title>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.8/push.min.js"></script>
+    <script>
+        if (Push.Permission.get() != 'granted') {
+            Push.Permission.request()
+        }
+
+        if (Push.Permission.get() == 'granted') {
+            Push.create('Hello World!', {
+                body: 'This is a notification',
+                icon: 'https://avatars1.githubusercontent.com/u/60019382?s=460&u=b336f565f0efc9a7a666c929458b0715b84f4c19&v=4',
+                timeout: 4000,
+                onClick: function () {
+                    window.location.href = 'https://github.com/Lukinhasssss'
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

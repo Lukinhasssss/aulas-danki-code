@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução</title>
+</head>
+
+<body>
+    <h1 id="main-text">Olá, </h1>
+    <div onclick="showMessage()" class="teste">
+        <p>Olá!</p>
+    </div>
+    <p>Hello!</p>
+
+    <script>
+        /* EVENTOS */
+        function showMessage() {
+            alert('Hello World')
+        }
+
+        window.onload = function() {
+            const elemento = document.getElementById('main-text')
+            elemento.innerHTML = elemento.innerHTML + 'Lucas'
+
+            elemento.style.color = '#0088ff'
+            elemento.style.background = '#333'
+            elemento.style.padding = '50px'
+            elemento.style.border = '5px solid #0088ff'
+
+            // const elemento2 = document.querySelector('p') // querySelector seleciona somente o primeiro elemento
+            // elemento2.style.marginTop = '8px'
+            // elemento2.style.padding = '20px'
+            // elemento2.style.color = '#333'
+            // elemento2.style.background = "#0088ff"
+            // elemento2.style.border = '5px solid #333'
+
+            const elementos = document.querySelectorAll('p')
+            for (let i = 0; i < elementos.length; i++) {
+                elementos[i].style.marginTop = '8px'
+                elementos[i].style.padding = '20px'
+                elementos[i].style.color = '#333'
+                elementos[i].style.background = "#0088ff"
+                elementos[i].style.border = '5px solid #333'
+            }
+        }
+    </script>
+</body>
+
+</html>
