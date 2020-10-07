@@ -1,0 +1,22 @@
+@import 'reset'
+
+@mixin trocarCor($color)
+    background-color: $color
+
+@mixin addBorder($tamanho, $tipo, $cor)
+    border: $tamanho $tipo $cor
+
+div
+    @include trocarCor(#7725c9)
+    width: 300px
+    height: 200px
+    @include addBorder(5px, solid, #10bd33)
+
+    a
+        text-decoration: none
+        font-family: $family
+        font-size: $fontSize
+        color: #fff
+    h2
+        background: $corBg
+        color: #fe0
