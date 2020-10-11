@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cadastrar Cliente</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Roboto;
+        }
+
+        html, body {
+            height: 100vh;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: cornflowerblue;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            min-height: 400px;
+            margin: 0 auto;
+            background-color: #eee;
+            border: 3px solid #333;
+            border-radius: 8px;
+        }
+
+        form h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        form input[type=text] {
+            width: 100%;
+            max-width: 300px;
+            height: 40px;
+            margin-bottom: 10px;
+            border: 3px solid #ccc;
+            border-radius: 8px;
+            padding: 8px;
+            color: #888;
+            outline: 0;
+        }
+
+        form input[type=submit] {
+            width: 120px;
+            margin-top: 20px;
+            padding: 8px 0;
+            border: 0;
+            border-radius: 8px;
+            background-color: #333;
+            color: #fff;
+            outline: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form method=post>
+            <h2>Cadastrar Cliente!</h2>
+            <input type="text" name="nome" placeholder="Nome...">
+            <input type="text" name="sobrenome" placeholder="Sobrenome...">
+            <input type="text" name="empresa" placeholder="Empresa">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
