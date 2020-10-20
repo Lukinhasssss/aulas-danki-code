@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    background-color: #FAF9FC;
+}
+
+.clear {
+    clear: both;
+}
+
+div.sidebar {
+    float: left;
+    width: 300px;
+    height: 100%;
+    background-color: #2D3035;
+}
+
+div.topo {
+    padding: 24px 10px;
+    text-align: center;
+    background-color: #26282D;
+}
+
+div.topo h3 {
+    color: #fff;
+}
+
+div.menu {
+    padding: 30px;
+}
+
+div.menu ul {
+    list-style-type: none;
+}
+
+div.menu ul li {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #717171;
+}
+
+div.menu ul li:hover i {
+    /* transition: 0.3s; */
+    color: #6D3BBB;
+}
+
+div.menu ul li:hover a {
+    /* transition: 0.3s; */
+    color: #fff;
+}
+
+div.menu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #717171;
+}
+
+div.main-content {
+    float: left;
+    width: calc(100% - 300px);
+    height: 100%;
+}
+
+header {
+    height: 72px;
+    background-color: #fff;
+    padding: 20px 15px; /* padding: 20px 15px; */
+    border-bottom: 2px solid #ccc;
+}
+
+.pesquisa-campo {
+    float: right;
+}
+
+.icone-pesquisa {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #D6D6D6;
+    vertical-align: middle;
+}
+
+.icone-pesquisa i {
+    position: relative;
+    top: 5px;
+}
+
+.pesquisa-campo form {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pesquisa-campo input[type=text] {
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.pesquisa-campo input[type=text]:focus {
+    outline: 0;
+}
+
+.icone-alerta {
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-right: 28px;
+    text-align: center;
+    background-color: #FBEDEF;
+    cursor: pointer;
+    position: relative;
+}
+
+.icone-alerta p {
+    display: inline-block;
+    position: absolute;
+    left: -8px;
+    top: -8px;
+    padding: 3px;
+    font-size: 10px;
+    color: #fff;
+    background-color: #ED7387;
+}
+
+.icone-alerta i {
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ED7387;
+}
+
+.nome-usuario {
+    float: left;
+}
+
+.nome-usuario h2 {
+    margin-top: 4px;
+    font-size: 23px;
+    font-weight: 300;
+    color: #A7A7A7;
+    cursor: pointer;
+}
+
+.content1 {
+    float: left;
+    width: 75%;
+    padding: 30px;
+    overflow-y: auto;
+    height: calc(100% - 72px);
+}
+
+.panel {
+    float: left;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 12px;
+    border: 1px solid #EBEBEB;
+    background-color: #fff;
+}
+
+.panel h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #7F7F7F;
+}
+
+.panel p {
+    margin-top: 12px;
+    font-size: 15px;
+    color: #B2B2B2;
+}
+
+.ultimas-atividades {
+    width: 25%;
+    height: calc(100% - 72px);
+    float: left;
+    padding: 20px 40px;
+    background-color: #EAEBEB;
+    overflow-y: auto;
+}
+
+.atividades-topo h2 {
+    padding: 15px;
+    font-size: 23px;
+    font-weight: 500;
+    color: #7F7F7F;
+    border-bottom: 1px solid #ccc;
+}
+
+.atividade-registro {
+    position: relative;
+    padding: 15px 10px;
+    border-left: 1px solid #BBB;
+}
+
+.circle-atividade {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    border: 1px solid #ccc;
+    background-color: #E9EBEB;
+}
+
+.atividade-registro h2 {
+    font-size: 19px;
+    font-weight: 500;
+    color: #BBB;
+}
+
+.atividade-registro p {
+    font-size: 15px;
+    color: #B2B2B2;
+}
+
+@media (max-width: 768px) {
+    .ultimas-atividades {
+        display: none;
+    }
+
+    .content1 {
+        width: 100%;
+    }
+
+    .panel {
+        width: 100% !important;
+    }
+
+    .sidebar {
+        display: none;
+        position: relative;
+        z-index: 999;
+    }
+
+    div.main-content {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
